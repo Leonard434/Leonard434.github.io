@@ -7,6 +7,14 @@
     border: 1px solid var(--secondary-color);
 }
 
+[data-theme="dark"] .contact__form .form-control {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .contact__form .form-control::placeholder {
+    color: #9ca3af;
+}
+
 .contact__form input.form-control {
     margin-bottom: 2em;
     height: calc(2.5em + .75rem + 2px);

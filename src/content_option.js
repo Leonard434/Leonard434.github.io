@@ -12,7 +12,7 @@ const introdata = {
         third: "I solve business problems with data",
     },
     description: "Data-driven problem solver with experience in Accounting and Data Science, focused on building dashboards and models that support decision making.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: require("./assets/images/mypic.png"),
 };
 
 const dataabout = {
@@ -82,25 +82,27 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/300?random=1",
-        description: "Full Sales Data Visualization — Power BI dashboard analyzing revenue drivers, trends, and KPIs across products and time.",
-        link: "https://www.datascienceportfol.io/leonardthuranira",
+const dataportfolio = [
+    {
+        img: "https://images.unsplash.com/photo-1447933601403-0c6688de566e", // cafe / coffee shop
+        title: "Cafe Sales Data Cleaning & Exploratory Data Analysis",
+        description:
+            "End-to-end cleaning and analysis of real café sales data sourced from Kaggle. I fixed data quality issues (missing values, inconsistent labels, incorrect data types), engineered time-based features, and used Python (pandas, matplotlib, seaborn) to uncover revenue trends, peak hours, high- and low-performing items, and weekday vs weekend behavior, turning raw POS data into clear, decision-ready insights.",
+        link: "https://github.com/Leonard434/Cafe-Sales-Data-Cleaning-and-Explatory-Data-Analysis",
     },
     {
-        img: "https://picsum.photos/400/300?random=2",
-        description: "Loan Eligibility Prediction — Machine learning model and interface to classify loan applications and speed up underwriting.",
-        link: "https://www.datascienceportfol.io/leonardthuranira",
+        img: "https://raw.githubusercontent.com/Leonard434/netflix_database_movies_project/main/Netflix-swimlane-home.webp",
+        title: "Netflix Database Movies (PostgreSQL)",
+        description:
+            "I used PostgreSQL to load and structure the Netflix Movies & TV Shows dataset, normalizing it into clean relational tables for titles, cast, and genres. From there I wrote analysis queries that answer business questions such as: which genres are most popular by country, how average ratings differ by genre and producer, and which years saw the highest number of releases. This project shows how SQL can turn a streaming catalogue into concrete insights about content distribution, audience tastes, and release trends across markets.",
+        link: "https://github.com/Leonard434/netflix_database_movies_project",
     },
     {
-        img: "https://picsum.photos/400/300?random=3",
-        description: "Café Sales Cleaning & Business Insights — Python EDA on POS data to support forecasting, inventory, and menu optimization.",
-        link: "https://www.datascienceportfol.io/leonardthuranira",
-    },
-    {
-        img: "https://picsum.photos/400/300?random=4",
-        description: "Netflix SQL Movies Analysis — SQL project uncovering content trends, genres, and production patterns over 20+ years.",
-        link: "https://www.datascienceportfol.io/leonardthuranira",
+        img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3", // finance / loan
+        title: "Loan Approval Prediction with Machine Learning",
+        description:
+            "Supervised machine learning pipeline that predicts loan approval from applicant features like income, employment, credit history, and property details. I performed EDA, encoded categorical variables, handled missing values, scaled features, and trained several models, then compared them using cross-validation, confusion matrices, and classification reports—selecting Logistic Regression and Naive Bayes as interpretable, high-recall models suitable for real-world credit screening.",
+        link: "https://github.com/Leonard434/Loan_prediction",
     },
 ];
 
@@ -110,16 +112,16 @@ const contactConfig = {
     description: "Let’s connect about data analytics, dashboarding, and decision support. I’m especially interested in roles where I can combine accounting knowledge with data science to drive measurable business impact.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_26y3ve8",
+    YOUR_TEMPLATE_ID: "template_isrgko6",
+    YOUR_USER_ID: "dMt7hKT-877yh8UEr",
 };
 
 const socialprofils = {
     github: "https://github.com",
-    facebook: "https://facebook.com",
+    facebook: "https://facebook.com/profile.php?id=61554986197837",
     linkedin: "https://www.linkedin.com/in/leonard-thuranira-67785024a/",
-    twitter: "https://twitter.com",
+    twitter: "https://x.com/leonmaster_ke",
 };
 export {
     meta,
