@@ -7,17 +7,17 @@ const meta = {
 const introdata = {
     title: "I’m Leonard Thuranira",
     animated: {
-        first: "I turn data into insights",
-        second: "I build analytical dashboards",
-        third: "I solve business problems with data",
+        first: "I turn data into predictive intelligence",
+        second: "I build machine learning pipelines",
+        third: "I solve business problems with advanced analytics",
     },
-    description: "Data-driven problem solver with experience in Accounting and Data Science, focused on building dashboards and models that support decision making.",
+    description: "Data scientist bridging Accounting and Data Science, focused on predictive modeling, feature engineering, and decision support through scalable data solutions.",
     your_img_url: require("./assets/images/mypic.png"),
 };
 
 const dataabout = {
     title: "A bit about myself",
-    aboutme: "I am a data-driven problem solver with a background in Accounting and Data Science. I specialize in turning business data into clear, actionable insights through data cleaning, exploratory analysis, and visualization using Power BI, SQL, and Python. With a foundation in accounting and auditing, I combine business understanding with analytical rigor to ensure data supports strategic and operational decisions.",
+    aboutme: "I am a data scientist with a background in Accounting and Data Science. I specialize in predictive modeling, machine learning, and data engineering, turning complex business data into strategic, objective-driven insights. With a strong foundation in accounting and auditing, I deliver end-to-end data science solutions that support risk management, customer retention, and revenue growth.",
 };
 const worktimeline = [{
         jobtitle: "Accountant Attaché",
@@ -80,29 +80,48 @@ const services = [{
         title: "Machine Learning & Predictive Modeling",
         description: "Building and evaluating predictive models to support use cases such as loan eligibility and business forecasting.",
     },
+    {
+        title: "Data Science Strategy & Model Deployment",
+        description: "Delivering production-ready ML models with CI/CD, model monitoring, and stakeholder-focused analytics storytelling to drive measurable business value.",
+    },
 ];
 
 const dataportfolio = [
     {
-        img: "https://images.unsplash.com/photo-1447933601403-0c6688de566e", // cafe / coffee shop
-        title: "Cafe Sales Data Cleaning & Exploratory Data Analysis",
+        img: "https://images.unsplash.com/photo-1559526324-593bc073d938", // customer churn
+        title: "Bank Customer Churn Prediction (Random Forest)",
         description:
-            "End-to-end cleaning and analysis of real café sales data sourced from Kaggle. I fixed data quality issues (missing values, inconsistent labels, incorrect data types), engineered time-based features, and used Python (pandas, matplotlib, seaborn) to uncover revenue trends, peak hours, high- and low-performing items, and weekday vs weekend behavior, turning raw POS data into clear, decision-ready insights.",
-        link: "https://github.com/Leonard434/Cafe-Sales-Data-Cleaning-and-Explatory-Data-Analysis",
-    },
-    {
-        img: "https://raw.githubusercontent.com/Leonard434/netflix_database_movies_project/main/Netflix-swimlane-home.webp",
-        title: "Netflix Database Movies (PostgreSQL)",
-        description:
-            "I used PostgreSQL to load and structure the Netflix Movies & TV Shows dataset, normalizing it into clean relational tables for titles, cast, and genres. From there I wrote analysis queries that answer business questions such as: which genres are most popular by country, how average ratings differ by genre and producer, and which years saw the highest number of releases. This project shows how SQL can turn a streaming catalogue into concrete insights about content distribution, audience tastes, and release trends across markets.",
-        link: "https://github.com/Leonard434/netflix_database_movies_project",
+            "End-to-end customer churn prediction pipeline for a bank with Random Forest model deployment. Includes exploratory analysis, feature engineering (tenure, balance ratio, interaction features), class imbalance handling, and hyperparameter tuning with GridSearchCV. Model validated on holdout set with 88% accuracy, 82% recall on churn class, and 0.91 ROC AUC; high-risk cohort segmentation and recommended retention interventions for priority customer groups.",
+        link: "https://github.com/Leonard434/customer-churn-prediction.git",
+        deployLink: "https://customer-churn-prediction-cg3h.onrender.com/",
     },
     {
         img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3", // finance / loan
         title: "Loan Approval Prediction with Machine Learning",
         description:
-            "Supervised machine learning pipeline that predicts loan approval from applicant features like income, employment, credit history, and property details. I performed EDA, encoded categorical variables, handled missing values, scaled features, and trained several models, then compared them using cross-validation, confusion matrices, and classification reports—selecting Logistic Regression and Naive Bayes as interpretable, high-recall models suitable for real-world credit screening.",
+            "Machine learning model for loan decision support built from financial applicant profiles. I executed full ETL, engineered credit score proxies, addressed skew via SMOTE, and compared candidate algorithms with cross-validation. Selected interpretable high-performance model and documented precision/recall tradeoffs for low-risk lending and reduced default exposure.",
         link: "https://github.com/Leonard434/Loan_prediction",
+    },
+    {
+        img: "https://raw.githubusercontent.com/Leonard434/netflix_database_movies_project/main/Netflix-swimlane-home.webp",
+        title: "Netflix Database Movies (PostgreSQL)",
+        description:
+            "Data engineering & analytics project structuring streaming catalog data into normalized PostgreSQL schema. Built complex SQL queries and dashboards to uncover user engagement signals, top genre performance, and content release velocity across regions. Created executive-ready insights that support content acquisition strategy and investment prioritization for audience growth.",
+        link: "https://github.com/Leonard434/netflix_database_movies_project",
+    },
+    {
+        img: "https://github.com/Praveendinesha/Sales-Insights-Analysis/assets/142248403/f5a42c27-1638-49cb-9ee0-3521b29bc9c1", // finance / loan
+        title: "Sales Analytics Power BI Dashboard",
+        description:
+            "Interactive Power BI dashboard combining sales data pipelines with KPI forecasting and trend detection. I built model measures for revenue growth, customer LTV, inventory turnover, and region performance, supporting data-driven product mix and pricing decisions. The solution blends BI visualization with actionable insights to improve revenue by identifying high-impact customer segments and seasonal demand patterns.",
+        link: "https://github.com/Leonard434/PowerBI-Sales-Analyses-dashboard.git",
+    },
+    {
+        img: "https://www.journeypalette.co.ke/uploads/blogs/c311cb96-bd25-48f0-baf8-7b77959d427b.jpg", // cafe / coffee shop
+        title: "Cafe Sales Data Cleaning & EDA",
+        description:
+            "Data science workflow for retail sales performance: data QA, feature engineering, time-series trends, and pricing elasticity investigation. Implemented anomaly detection, seasonality decomposition, and cohort analysis to quantify menu item lift and optimize promotion windows. Delivered insights that inform staffing, menu strategy, and revenue optimization for cafe operations.",
+        link: "https://github.com/Leonard434/Cafe-Sales-Data-Cleaning-and-Explatory-Data-Analysis",
     },
 ];
 

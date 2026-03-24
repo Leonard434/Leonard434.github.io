@@ -27,9 +27,16 @@ export const Portfolio = () => {
                 <div className="content">
                   {data.title && <h5>{data.title}</h5>}
                   <p>{data.description}</p>
-                  <a href={data.link} target="_blank" rel="noopener noreferrer">
-                    view project
-                  </a>
+                  <div className="project-links">
+                    <a href={data.link} target="_blank" rel="noopener noreferrer">
+                      view project
+                    </a>
+                    {data.deployLink && (
+                      <a href={data.deployLink} target="_blank" rel="noopener noreferrer">
+                        live demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             );
